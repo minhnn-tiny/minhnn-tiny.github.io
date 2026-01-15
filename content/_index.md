@@ -18,10 +18,12 @@ sections:
       # Show a call-to-action button under your biography? (optional)
       button:
         text: Download CV
-        url: uploads/resume.pdf
+        url: uploads/Nhat_Minh_Nguyen_CV.pdf
+        # - text: Research Statement
+        #   url: uploads/research_statement.pdf
       headings:
-        about: ''
-        education: ''
+        about: 'About me'
+        education: 'Education'
         interests: ''
     design:
       # Use the new Gradient Mesh which automatically adapts to the selected theme colors
@@ -37,29 +39,49 @@ sections:
       avatar:
         size: medium # Options: small (150px), medium (200px, default), large (320px), xl (400px), xxl (500px)
         shape: circle # Options: circle (default), square, rounded
-  - block: markdown
-    content:
-      title: '📚 My Research'
-      subtitle: ''
-      text: |-
-        Use this area to speak to your mission. I'm a research scientist in the Moonshot team at DeepMind. I blog about machine learning, deep learning, and moonshots.
+  
 
-        I apply a range of qualitative and quantitative methods to comprehensively investigate the role of science and technology in the economy.
+  # - block: markdown
+  #   content:
+  #     title: '📚 My Research Statement'
+  #     subtitle: ''
+  #     text: |-
+  #       During research time at SMU, our team has published four papers on Vulnerability Detection for smart contracts using Graph Neural Networks (GNNs) and Large Language Models (LLMs). Based on these research achievements, we are processing a patent filing and have launched a startup, **Mando** (mandoscan.com), which is currently applying for SMU IIE’s Gap Funding.
+  #       <figure>
+  #         <img src="uploads/mandoguru_visual_graph.png" alt="Description of the image">
+  #         <figcaption><b>Mando Usage:</b><i>The detected vulnerabilities highlighted in the source code and the corresponding visual graph</i></figcaption>
+  #       </figure>
 
-        Please reach out to collaborate 😃
-    design:
-      columns: '1'
-  - block: collection
-    id: papers
-    content:
-      title: Featured Publications
-      filters:
-        folders:
-          - publications
-        featured_only: true
-    design:
-      view: article-grid
-      columns: 2
+  #       Following my positive experience in SMU’s research environment, I have developed a strong foundation in software engineering and graph learning. I am eager to pursue a PhD at SMU to further advance this field. 
+
+  #       ### Motivation: From Detection to Multimodal Intelligent Agents
+  #       While my previous work utilized GNNs and LLMs to detect vulnerabilities, the industry is shifting toward automated development. However, software engineering is not solely a text-processing task; it is inherently multimodal, involving source code (text); logic flows and project structure (graphs); system designs and UI/UX (diagrams/images).
+        
+  #       Current LLMs struggle because they treat code primarily as text, ignoring the rich structural and visual contexts of software development. Therefore, I propose a PhD research direction focusing on AI for Software Engineering (AI4SE) for complex challenges such as bug fixing, code completion/generation, enhanced CI/CDs, and operation monitoring with two key pillars: Multimodal AI Agents and Graph Retrieval-Augmented Generation (GraphRAG).
+        
+  #       #### Multimodal AI Agents
+        
+
+
+
+
+
+    
+  #       Please reach out to collaborate 😃
+  #   design:
+  #     columns: '1'
+
+  # - block: collection
+  #   id: papers
+  #   content:
+  #     title: Featured Publications
+  #     filters:
+  #       folders:
+  #         - publications
+  #       featured_only: true
+  #   design:
+  #     view: article-grid
+  #     columns: 2
   - block: collection
     content:
       title: Recent Publications
@@ -70,23 +92,23 @@ sections:
         exclude_featured: false
     design:
       view: citation
+  # - block: collection
+  #   id: talks
+  #   content:
+  #     title: Recent & Upcoming Talks
+  #     filters:
+  #       folders:
+  #         - events
+  #   design:
+  #     view: card
   - block: collection
-    id: talks
+    id: blogs
     content:
-      title: Recent & Upcoming Talks
-      filters:
-        folders:
-          - events
-    design:
-      view: card
-  - block: collection
-    id: news
-    content:
-      title: Recent News
+      title: Recent Blogs
       subtitle: ''
       text: ''
       # Page type to display. E.g. post, talk, publication...
-      page_type: blog
+      page_type: blogs
       # Choose how many pages you would like to display (0 = all pages)
       count: 10
       # Filter on criteria
