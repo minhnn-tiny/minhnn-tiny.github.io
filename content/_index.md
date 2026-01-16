@@ -15,12 +15,14 @@ sections:
       # Choose a user profile to display (a folder name within `content/authors/`)
       username: me
       text: ''
-      # Show a call-to-action button under your biography? (optional)
-      button:
-        text: Download CV
-        url: uploads/Nhat_Minh_Nguyen_CV.pdf
-        # - text: Research Statement
-        #   url: uploads/research_statement.pdf
+      # Show call-to-action buttons under your biography (supports multiple)
+      buttons:
+        - text: Download CV
+          url: uploads/Nhat_Minh_Nguyen_CV.pdf
+          icon: document-arrow-down
+        - text: Research Statement
+          url: uploads/research_statement.pdf
+          icon: document-text
       headings:
         about: 'About me'
         education: 'Education'
@@ -61,12 +63,6 @@ sections:
         
   #       #### Multimodal AI Agents
         
-
-
-
-
-
-    
   #       Please reach out to collaborate 😃
   #   design:
   #     columns: '1'

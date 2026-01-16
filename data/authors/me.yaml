@@ -67,9 +67,11 @@ skills:
       - label: Python
         level: 8
       - label: Machine Learning
-        level: 4
+        level: 6
       - label: Cloud Computing
-        level: 4
+        level: 6
+      - label: CI/CDs
+        level: 6 
   - name: Research & Communication
     items:
       - label: Academic Writing
